@@ -23,128 +23,139 @@
 </head>
 
 <body>
-    <!-- Fundo dinâmico com gradientes animados suaves -->
+    <!-- Preloader de carregamento premium -->
+    <div id="preloader">
+        <div class="loader-logo-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" class="bok2-logo-loader">
+                <g transform="translate(10, 10)">
+                    <!-- Ícone de 4 folhas empilhadas em perspectiva -->
+                    <path class="draw-path path-4" d="M 40,15 L 65,15 L 65,40 L 40,40 Z" fill="none" stroke="#FFFFFF"
+                        stroke-width="4.5" stroke-linejoin="round" opacity="0.4" />
+                    <path class="draw-path path-3" d="M 30,22 L 55,22 L 55,47 L 30,47 Z" fill="none" stroke="#FFFFFF"
+                        stroke-width="4.5" stroke-linejoin="round" opacity="0.6" />
+                    <path class="draw-path path-2" d="M 20,29 L 45,29 L 45,54 L 20,54 Z" fill="none" stroke="#FFFFFF"
+                        stroke-width="4.5" stroke-linejoin="round" opacity="0.8" />
+                    <path class="draw-path path-1" d="M 10,36 L 35,36 L 35,61 L 10,61 Z" fill="none" stroke="#FFFFFF"
+                        stroke-width="4.5" stroke-linejoin="round" />
+                </g>
+                <text class="text-bok2" x="95" y="55" font-family="'Outfit', sans-serif" font-size="44"
+                    font-weight="700" fill="#FFFFFF" letter-spacing="-1">
+                    bok<tspan fill="#F25222">2</tspan>
+                </text>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Fundo dinâmico com gradientes animados suaves (Mesh Gradient style) -->
     <div class="bg-glow-1"></div>
     <div class="bg-glow-2"></div>
+    <div class="bg-glow-3"></div>
 
     <div class="container">
         <!-- Cabeçalho / Perfil -->
         <header class="profile-header">
-            <!-- Logo SVG Bok2 Moderno e Responsivo -->
+            <!-- Logo Circular SVG (Fiel à imagem) -->
             <div class="logo-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" class="bok2-logo">
-                    <g transform="translate(10, 10)">
-                        <!-- Ícone de 4 folhas empilhadas em perspectiva -->
-                        <!-- Folha 4 (Mais atrás) -->
-                        <path d="M 40,15 L 65,15 L 65,40 L 40,40 Z" fill="none" stroke="#FFFFFF" stroke-width="4.5"
-                            stroke-linejoin="round" opacity="0.4" />
-                        <!-- Folha 3 -->
-                        <path d="M 30,22 L 55,22 L 55,47 L 30,47 Z" fill="none" stroke="#FFFFFF" stroke-width="4.5"
-                            stroke-linejoin="round" opacity="0.6" />
-                        <!-- Folha 2 -->
-                        <path d="M 20,29 L 45,29 L 45,54 L 20,54 Z" fill="none" stroke="#FFFFFF" stroke-width="4.5"
-                            stroke-linejoin="round" opacity="0.8" />
-                        <!-- Folha 1 (Frente) -->
-                        <path d="M 10,36 L 35,36 L 35,61 L 10,61 Z" fill="none" stroke="#FFFFFF" stroke-width="4.5"
-                            stroke-linejoin="round" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="bok2-logo-circular">
+                    <circle cx="100" cy="100" r="96" fill="#000000" />
+                    <g transform="translate(15, 60) scale(0.78)">
+                        <g transform="translate(10, 10)">
+                            <path d="M 40,15 L 65,15 L 65,40 L 40,40 Z" fill="none" stroke="#FFFFFF" stroke-width="4.5"
+                                stroke-linejoin="round" opacity="0.4" />
+                            <path d="M 30,22 L 55,22 L 55,47 L 30,47 Z" fill="none" stroke="#FFFFFF" stroke-width="4.5"
+                                stroke-linejoin="round" opacity="0.6" />
+                            <path d="M 20,29 L 45,29 L 45,54 L 20,54 Z" fill="none" stroke="#FFFFFF" stroke-width="4.5"
+                                stroke-linejoin="round" opacity="0.8" />
+                            <path d="M 10,36 L 35,36 L 35,61 L 10,61 Z" fill="none" stroke="#FFFFFF" stroke-width="4.5"
+                                stroke-linejoin="round" />
+                        </g>
+                        <text x="95" y="55" font-family="'Outfit', sans-serif" font-size="44" font-weight="700"
+                            fill="#FFFFFF" letter-spacing="-1">
+                            bok<tspan fill="#F25222">2</tspan>
+                        </text>
                     </g>
-                    <!-- Textos do Logo: bok2 -->
-                    <text x="95" y="55" font-family="'Outfit', sans-serif" font-size="44" font-weight="700"
-                        fill="#FFFFFF" letter-spacing="-1">bok<tspan fill="#F25222">2</tspan></text>
                 </svg>
             </div>
 
-            <p class="profile-bio">Sua plataforma de impressão sob demanda. Publique e venda seus livros sem tiragem
-                mínima e sem estoque.</p>
+            <h1 class="profile-name"></h1>
+            <p class="profile-subtitle">Acesse nossas Páginas</p>
         </header>
 
-        <!-- Container de Links -->
+        <!-- Container de Links (Estilo Pílula da Imagem) -->
         <main class="links-container">
-            <!-- Link: WhatsApp (Destaque Verde/Pulsante) -->
-            <a href="https://wa.me/5511971137243" target="_blank" rel="noopener" class="link-card highlight-whatsapp"
-                id="link-whatsapp">
-                <div class="icon-box">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
-                <div class="link-content">
-                    <span class="link-title">WhatsApp Bok2</span>
-                    <span class="link-subtitle">Fale diretamente com nossa equipe de atendimento</span>
-                </div>
-                <div class="arrow-box">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </div>
+            <!-- Link: WhatsApp Bok2 -->
+            <a href="https://wa.me/5511971137243" target="_blank" rel="noopener" class="link-card" id="link-whatsapp">
+                WHATSAPP BOK2
             </a>
 
-            <!-- Link: Calculadora e Orçamentos (Destaque Laranja/Shimmer) -->
-            <a href="https://www.bok2.com.br/#calculadora" target="_blank" rel="noopener"
-                class="link-card highlight-calculator" id="link-calculator">
-                <div class="icon-box">
-                    <i class="fa-solid fa-calculator"></i>
-                </div>
-                <div class="link-content">
-                    <span class="link-title">Calculadora e Orçamentos</span>
-                    <span class="link-subtitle">Simule custos de impressão em tempo real</span>
-                </div>
-                <div class="badge-new">Destaque</div>
-                <div class="arrow-box">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </div>
+            <!-- Link: Calculadora e Orçamentos -->
+            <a href="https://www.bok2.com.br/#calculadora" target="_blank" rel="noopener" class="link-card"
+                id="link-calculator">
+                CALCULADORA E ORÇAMENTOS
             </a>
 
             <!-- Link: Site Principal -->
             <a href="https://www.bok2.com.br" target="_blank" rel="noopener" class="link-card" id="link-website">
-                <div class="icon-box">
-                    <i class="fa-solid fa-globe"></i>
-                </div>
-                <div class="link-content">
-                    <span class="link-title">Site Principal</span>
-                    <span class="link-subtitle">Conheça nossa plataforma e publique seu livro</span>
-                </div>
-                <div class="arrow-box">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </div>
+                SITE PRINCIPAL
             </a>
 
             <!-- Link: Livraria da Bok2 -->
             <a href="https://www.livrariadabok2.com.br" target="_blank" rel="noopener" class="link-card"
                 id="link-bookstore">
-                <div class="icon-box">
-                    <i class="fa-solid fa-book-open"></i>
-                </div>
-                <div class="link-content">
-                    <span class="link-title">Livraria da Bok2</span>
-                    <span class="link-subtitle">Compre obras publicadas pelos nossos autores</span>
-                </div>
-                <div class="arrow-box">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </div>
+                LIVRARIA DA BOK2
             </a>
         </main>
-
-        <!-- Redes Sociais / Rodapé -->
-        <footer class="profile-footer">
-            <div class="social-icons">
-                <a href="https://www.instagram.com/bok2.brasil" target="_blank" rel="noopener" aria-label="Instagram"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/bok2brasil" target="_blank" rel="noopener" aria-label="Facebook"><i
-                        class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.linkedin.com/company/bok2" target="_blank" rel="noopener" aria-label="LinkedIn"><i
-                        class="fa-brands fa-linkedin-in"></i></a>
-            </div>
-            <p class="footer-copy">&copy; 2026 Bok2 Brasil. Todos os direitos reservados.</p>
-        </footer>
+        <!-- Bio de descrição abaixo dos botões -->
+        <p class="profile-bio-bottom">Sua plataforma de impressão sob demanda. Publique e venda seus livros sem tiragem
+            mínima e sem estoque.
+        </p>
     </div>
 
-    <!-- Script leve para efeito 3D nos cards no hover se desejado -->
+    <!-- Barra laranja horizontal na base da página -->
+    <div class="bottom-bar"></div>
+
+    <!-- Script premium para Preloader, Efeito 3D Tilt e Glow Tracking -->
     <script>
+        // Gerenciamento do Preloader
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const preloader = document.getElementById('preloader');
+                if (preloader) {
+                    preloader.classList.add('fade-out');
+                    document.body.classList.add('loaded');
+                    setTimeout(() => {
+                        preloader.remove();
+                    }, 600);
+                }
+            }, 1400); // Garante que a animação estilosa do logo seja vista
+        });
+
+        // Efeito de Inclinação 3D (Tilt) e Brilho Dinâmico
         document.querySelectorAll('.link-card').forEach(card => {
             card.addEventListener('mousemove', e => {
                 const rect = card.getBoundingClientRect();
                 const x = e.clientX - rect.left;
                 const y = e.clientY - rect.top;
 
+                // Propriedades customizadas para a posição do mouse no gradiente radial
                 card.style.setProperty('--mouse-x', `${x}px`);
                 card.style.setProperty('--mouse-y', `${y}px`);
+
+                // Cálculo para inclinação 3D
+                const width = rect.width;
+                const height = rect.height;
+                const centerX = width / 2;
+                const centerY = height / 2;
+
+                const maxTilt = 8; // Grau máximo de inclinação
+                const tiltX = ((y - centerY) / centerY) * -maxTilt;
+                const tiltY = ((x - centerX) / centerX) * maxTilt;
+
+                card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-5px) scale3d(1.02, 1.02, 1.02)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
             });
         });
     </script>
