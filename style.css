@@ -2,14 +2,18 @@
 
 :root {
     /* Paleta de Cores Oficial Elevada */
-    --color-bg: #0b0b0c;          /* Preto Profundo Obsidian */
-    --color-teal: #4DB2A2;        /* Verde Água de Ação (Bok2) */
+    --color-bg: #0b0b0c;
+    /* Preto Profundo Obsidian */
+    --color-teal: #4DB2A2;
+    /* Verde Água de Ação (Bok2) */
     --color-teal-glow: rgba(77, 178, 162, 0.35);
-    --color-orange: #F25222;      /* Laranja Vibrante (Bok2) */
+    --color-orange: #F25222;
+    /* Laranja Vibrante (Bok2) */
     --color-orange-glow: rgba(242, 82, 34, 0.4);
-    --color-purple: #7000ff;      /* Roxo Elétrico para o Mesh Gradient */
+    --color-purple: #7000ff;
+    /* Roxo Elétrico para o Mesh Gradient */
     --color-white: #FFFFFF;
-    
+
     /* Variáveis de Vidro Ultra-Fino (Glassmorphism Premium) */
     --card-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
     --card-border: rgba(255, 255, 255, 0.06);
@@ -58,10 +62,21 @@
     animation: drawStroke 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
-.path-4 { animation-delay: 0.1s; }
-.path-3 { animation-delay: 0.25s; }
-.path-2 { animation-delay: 0.4s; }
-.path-1 { animation-delay: 0.55s; }
+.path-4 {
+    animation-delay: 0.1s;
+}
+
+.path-3 {
+    animation-delay: 0.25s;
+}
+
+.path-2 {
+    animation-delay: 0.4s;
+}
+
+.path-1 {
+    animation-delay: 0.55s;
+}
 
 .text-bok2 {
     opacity: 0;
@@ -92,8 +107,8 @@
 }
 
 body {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.78) 100%), 
-                url('books_dark_background.png') no-repeat center center fixed;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.78) 100%),
+        url('books_dark_background.png') no-repeat center center fixed;
     background-size: cover;
     color: var(--color-white);
     font-family: 'Inter', sans-serif;
@@ -113,7 +128,9 @@ body:not(.loaded) {
 }
 
 /* Gradientes Suaves de Fundo (Ocultados para corresponder ao visual da imagem) */
-.bg-glow-1, .bg-glow-2, .bg-glow-3 {
+.bg-glow-1,
+.bg-glow-2,
+.bg-glow-3 {
     display: none;
 }
 
@@ -148,21 +165,45 @@ body:not(.loaded) {
 }
 
 @keyframes floatGlow1 {
-    0% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(80px, 60px) scale(1.15); }
-    100% { transform: translate(-40px, 100px) scale(0.9); }
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(80px, 60px) scale(1.15);
+    }
+
+    100% {
+        transform: translate(-40px, 100px) scale(0.9);
+    }
 }
 
 @keyframes floatGlow2 {
-    0% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(-60px, -80px) scale(0.85); }
-    100% { transform: translate(50px, -30px) scale(1.1); }
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(-60px, -80px) scale(0.85);
+    }
+
+    100% {
+        transform: translate(50px, -30px) scale(1.1);
+    }
 }
 
 @keyframes floatGlow3 {
-    0% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(100px, -50px) scale(1.2); }
-    100% { transform: translate(-50px, 80px) scale(0.95); }
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(100px, -50px) scale(1.2);
+    }
+
+    100% {
+        transform: translate(-50px, 80px) scale(0.95);
+    }
 }
 
 /* Container Principal */
@@ -205,7 +246,8 @@ body:not(.loaded) {
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;
-    height: 600px; /* Estende-se até o topo da página */
+    height: 600px;
+    /* Estende-se até o topo da página */
     background: rgba(255, 255, 255, 0.07);
     border-bottom: 1px solid rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(2px);
@@ -227,7 +269,8 @@ body:not(.loaded) {
     font-family: 'Outfit', sans-serif;
     font-size: 2.2rem;
     font-weight: 800;
-    color: #F25222; /* Laranja da imagem */
+    color: #F25222;
+    /* Laranja da imagem */
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 6px;
@@ -276,10 +319,21 @@ body:not(.loaded) {
     animation: fadeInUpScale 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.loaded .links-container a:nth-child(1) { animation-delay: 0.1s; }
-.loaded .links-container a:nth-child(2) { animation-delay: 0.22s; }
-.loaded .links-container a:nth-child(3) { animation-delay: 0.34s; }
-.loaded .links-container a:nth-child(4) { animation-delay: 0.46s; }
+.loaded .links-container a:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.loaded .links-container a:nth-child(2) {
+    animation-delay: 0.22s;
+}
+
+.loaded .links-container a:nth-child(3) {
+    animation-delay: 0.34s;
+}
+
+.loaded .links-container a:nth-child(4) {
+    animation-delay: 0.46s;
+}
 
 /* Alternância de cores cinza/branco (exatamente como na imagem) */
 .links-container a:nth-child(odd) {
@@ -341,6 +395,7 @@ body:not(.loaded) {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -352,6 +407,7 @@ body:not(.loaded) {
         opacity: 0;
         transform: translateY(40px) scale(0.96);
     }
+
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -359,26 +415,51 @@ body:not(.loaded) {
 }
 
 @keyframes shimmer {
-    0% { left: -150%; }
-    30% { left: 150%; }
-    100% { left: 150%; }
+    0% {
+        left: -150%;
+    }
+
+    30% {
+        left: 150%;
+    }
+
+    100% {
+        left: 150%;
+    }
 }
 
 @keyframes borderPulseTeal {
-    0%, 100% { border-color: rgba(77, 178, 162, 0.22); }
-    50% { border-color: rgba(77, 178, 162, 0.75); }
+
+    0%,
+    100% {
+        border-color: rgba(77, 178, 162, 0.22);
+    }
+
+    50% {
+        border-color: rgba(77, 178, 162, 0.75);
+    }
 }
 
 @keyframes borderPulseOrange {
-    0%, 100% { border-color: rgba(242, 82, 34, 0.25); }
-    50% { border-color: rgba(242, 82, 34, 0.8); }
+
+    0%,
+    100% {
+        border-color: rgba(242, 82, 34, 0.25);
+    }
+
+    50% {
+        border-color: rgba(242, 82, 34, 0.8);
+    }
 }
 
 @keyframes badgePulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
         box-shadow: 0 2px 6px rgba(242, 82, 34, 0.3);
     }
+
     50% {
         transform: scale(1.05);
         box-shadow: 0 4px 12px rgba(242, 82, 34, 0.6);
@@ -391,21 +472,26 @@ body:not(.loaded) {
     body {
         padding: 24px 12px;
     }
+
     .profile-bio {
         font-size: 0.88rem;
     }
+
     .link-card {
         padding: 14px 16px;
     }
+
     .icon-box {
         width: 40px;
         height: 40px;
         font-size: 1.15rem;
         margin-right: 12px;
     }
+
     .link-title {
         font-size: 1rem;
     }
+
     .link-subtitle {
         font-size: 0.75rem;
     }
